@@ -9,31 +9,117 @@
 </head>
 <body>
     <div id="background">
-        <div class="container">
-            <div id="logo-marhalah">
-                <img src="https://fauzansulthoni.github.io/integrated698/assets/img/lambang-integrated.png" alt="">
+        
+        <audio id="myAudio" src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostpg698.mp3" preload="auto"></audio>
+            <div class="content">
+                <div id="logo-marhalah">
+                    <img class="flip" src="https://fauzansulthoni.github.io/integrated698/assets/img/lambang-integrated.png" alt="">
+                </div>
+                <h1 id="written-animation" class="integrated-tagline">Integrated Generation <br>698</h1>
+                <p> <b> The Centennial Hijri of Gontor </b>
+                    <br>
+                    Generasi yang utuh, berintegritas tinggi, bermutu, memiliki potensi dan kemampuan memancarkan kewibawaan dan kejujuran, serta mampu mensyiarkan nilai-nilai gontori yang berpegang teguh kepada nilai-nilai Islam
+                </p>         
+                 
+            
+            <div class="links-container">
+                <!-- Replace the URLs and link text with your own links -->
+                    <div class="link button-51">
+                        <a href="#">Link 1</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 2</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 4</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 5</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 6</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 7</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 8</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 9</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 10</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 11</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 12</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 13</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 14</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 15</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 16</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 17</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 18</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 19</a>
+                    </div>
+                    <div class="link button-51">
+                        <a href="#">Link 20</a>
+                    </div>
+                
+                <!-- Add more link elements as needed -->
             </div>
-            <div id="tagline-marhalah">
-                <div class="integrated-tagline"><div id="written-animation">Integrated Generation </div><span class="integrated-tagline-2">Siswa Akhir KMI 2023</span></div>
-            </div>           
-            <div class="link">            
-                <a class="link-drive" href="">Link Alternatif 1</a>                
-                <a class="link-drive" href="">Link Alternatif 2</a>                
-                <a class="link-drive" href="">Link Alternatif 3</a>                
-                <a class="link-drive" href="">Link Alternatif 4</a>                
-                <a class="link-drive" href="">Link Alternatif 5</a>                
-                <a class="link-drive" href="">Link Alternatif 6</a>                
-                <a class="link-drive" href="">Link Alternatif 7</a>                
-                <a class="link-drive" href="">Link Alternatif 8</a>                
-                <a class="link-drive" href="">Link Alternatif 9</a>                
-                <a class="link-drive" href="">Link Alternatif 10</a>
             </div>
             <div id="branding-flyer">
                 <img class="top-right-flyer" src="https://fauzansulthoni.github.io/integrated698/assets/img/vector-smart-object-20.png" alt="">
                 <img class="bottom-left-flyer" src="https://fauzansulthoni.github.io/integrated698/assets/img/golden-luxury-metal-texture-wave-white-6.png" alt="">
             </div>
             <div id="logo-1abad"></div>
-        </div>
+       
     </div>
+    <script>
+        var myAudio = document.getElementById("myAudio");
+      myAudio.currentTime=60;
+      var isPlaying = false;
+
+      function togglePlay() {
+        isPlaying ? myAudio.pause() : myAudio.play();
+      };
+
+      myAudio.onplaying = function() {
+        isPlaying = true;
+      };
+      myAudio.onpause = function() {
+        isPlaying = false;
+      };
+
+      var popupsound = document.getElementById("myAudio");
+
+      function autoNotify() {
+        popupsound.currentTime=60;
+        popupsound.play(); //play the audio file
+      }
+      alert('Only for people who bought the original PG 698 cassette, Thanks for your support!');
+        
+    </script>
 </body>
+
 </html>
