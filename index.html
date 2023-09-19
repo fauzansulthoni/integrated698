@@ -97,27 +97,29 @@
     </div>
     <script>
         if (confirm("Only for people who bought the original PG 698 cassette, Thanks for your support!")){
-            var myAudio = document.getElementById("myAudio");
-            myAudio.currentTime=60;
-            var isPlaying = false;
-
-            function togglePlay() {
-                isPlaying ? myAudio.pause() : myAudio.play();
-            };
-
-            myAudio.onplaying = function() {
-                isPlaying = true;
-            };
-            myAudio.onpause = function() {
-                isPlaying = false;
-            };
-
-            var popupsound = document.getElementById("myAudio");
-
-            function autoNotify() {
-                popupsound.currentTime=60;
-                popupsound.play(); //play the audio file
-            }
+            window.addEventListener('load', function () {
+                var myAudio = document.getElementById("myAudio");
+                myAudio.currentTime=60;
+                var isPlaying = false;
+    
+                function togglePlay() {
+                    isPlaying ? myAudio.pause() : myAudio.play();
+                };
+    
+                myAudio.onplaying = function() {
+                    isPlaying = true;
+                };
+                myAudio.onpause = function() {
+                    isPlaying = false;
+                };
+    
+                var popupsound = document.getElementById("myAudio");
+    
+                function autoNotify() {
+                    popupsound.currentTime=60;
+                    popupsound.play(); //play the audio file
+                }
+            })
          }
     </script>
 </body>
