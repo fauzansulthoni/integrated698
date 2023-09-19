@@ -10,7 +10,7 @@
 <body>
     <div id="background">
         
-        <audio id="myAudio" src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostpg698.mp3" preload="auto"></audio>
+        <audio id="myAudio" src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostpgdisco.mp3" preload="auto"></audio>
             <div class="content">
                 <div id="logo-marhalah">
                     <img class="flip" src="https://fauzansulthoni.github.io/integrated698/assets/img/lambang-integrated.png" alt="">
@@ -96,29 +96,29 @@
        
     </div>
     <script>
-        var myAudio = document.getElementById("myAudio");
-      myAudio.currentTime=60;
-      var isPlaying = false;
+        if (confirm("Only for people who bought the original PG 698 cassette, Thanks for your support!")){
+            var myAudio = document.getElementById("myAudio");
+            myAudio.currentTime=60;
+            var isPlaying = false;
 
-      function togglePlay() {
-        isPlaying ? myAudio.pause() : myAudio.play();
-      };
+            function togglePlay() {
+                isPlaying ? myAudio.pause() : myAudio.play();
+            };
 
-      myAudio.onplaying = function() {
-        isPlaying = true;
-      };
-      myAudio.onpause = function() {
-        isPlaying = false;
-      };
+            myAudio.onplaying = function() {
+                isPlaying = true;
+            };
+            myAudio.onpause = function() {
+                isPlaying = false;
+            };
 
-      var popupsound = document.getElementById("myAudio");
+            var popupsound = document.getElementById("myAudio");
 
-      function autoNotify() {
-        popupsound.currentTime=60;
-        popupsound.play(); //play the audio file
-      }
-      alert('Only for people who bought the original PG 698 cassette, Thanks for your support!');
-        
+            function autoNotify() {
+                popupsound.currentTime=60;
+                popupsound.play(); //play the audio file
+            }
+         }
     </script>
 </body>
 
