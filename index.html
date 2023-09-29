@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="background">
-        
-        <audio src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostdisco.mp3" autoplay preload="auto"></audio>
+        <embed name="ostdisco" src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostdisco.mp3" loop="true" hidden="true" autostart="true">
+       <!-- <audio src="https://fauzansulthoni.github.io/integrated698/assets/musik/ostdisco.mp3" autoplay preload="auto"></audio> -->
             <div class="content">
                 <div id="logo-marhalah">
                     <img class="flip" src="https://fauzansulthoni.github.io/integrated698/assets/img/lambang-integrated.png" alt="">
@@ -98,7 +98,7 @@
     <script>
         if (confirm("Only for people who bought the original PG 698 cassette, Thanks for your support!")){
             window.addEventListener('load', function () {
-                var myAudio = document.getElementById("myAudio");
+                var myAudio = 0;
                 myAudio.currentTime=60;
                 var isPlaying = false;
     
